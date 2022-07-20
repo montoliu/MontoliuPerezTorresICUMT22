@@ -1,4 +1,4 @@
-# Source code of IPIN2022 paper: "Efficient tuning of kNN hyperparameters for indoor positioning with N-TBEA"
+# Source code of the ICUMT2022 paper: "Efficient tuning of kNN hyperparameters for indoor positioning with N-TBEA"
 
 ## Authors:
 - Raúl Montoliu 
@@ -18,8 +18,8 @@ please send an email to **montoliu@uji.es**.
 
 ## Paper
 
-If the paper is accepted in IPIN2022, we will add here the url of the paper.
+If the paper is accepted in ICUMT2022, we will add here the url of the paper.
 
 ## Citation:
-If the paper is accepted in IPIN2022, we will add information about how to cite the paper.
+If the paper is accepted in ICUMT2022, we will add information about how to cite the paper.
  
