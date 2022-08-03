@@ -126,33 +126,3 @@ class KnnClassifier:
             error += euclidean(locs_estimated[i], locs_real[i])
         return error / len(locs_estimated)
 
-    # def get_error_bound(self, fp_test, fps_test_std, loc_test, k, dist_function, data_representation):
-    #     d = self.estimate_fps_distances(fp_test, dist_function, data_representation)
-    #     l_idx_neighbours, l_weights = self.get_neighbours(d, k, False)
-    #     l_loc_neighbours = []
-    #     for idx in l_idx_neighbours:
-    #         l_loc_neighbours.append(self.loc_train[idx])
-    #
-    #     loc_estimated = self.get_centroid(l_loc_neighbours, l_weights)     # knn result
-    #     error_estimated = self.estimate_error(loc_estimated, loc_test)
-    #     #print(l_idx_neighbours)
-    #
-    #     # error bounds
-    #     acm_x = 0
-    #     acm_y = 0
-    #     for i in range(k):
-    #         loc_error_x = abs(loc_estimated[0] - self.loc_train[l_idx_neighbours[i], 0])  # x_test - x_vecino
-    #         loc_error_y = abs(loc_estimated[1] - self.loc_train[l_idx_neighbours[i], 1])  # y_test - y_vecino
-    #         acm = 0
-    #         for j in range(self.n_aps):
-    #             num = fps_test_std[j]*fps_test_std[j] + \
-    #                   self.fps_train_std[l_idx_neighbours[i], j]*self.fps_train_std[l_idx_neighbours[i], j]
-    #             x = fp_test[j]-self.fps_train[l_idx_neighbours[i], j]
-    #             if x == 0:
-    #                 x = 0.1
-    #             den = x*x
-    #             acm += num/den
-    #         acm_x += loc_error_x * acm
-    #         acm_y += loc_error_y * acm
-    #
-    #     return error_estimated, max(math.sqrt(acm_x), math.sqrt(acm_y))
